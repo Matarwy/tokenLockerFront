@@ -754,10 +754,10 @@ const Dashboard = (props) => {
                 <Box sx={style}>
                     
                     {networkData.find((item)=>item.name==network) && <div style={{textAlign:'center'}}><img style={{width:"50px"}} src={networkData.find((item)=>item.name==network).url} alt="network" /></div>}
-                    <h3 id="modal-modal-title" variant="h6" component="h2" style={{textAlign:'center', marginTop:0}}>
+                    <h3 id="modal-modal-title" style={{textAlign:'center', marginTop:0}}>
                         {modalTitle}
                     </h3>
-                    <p id="modal-modal-description" sx={{ mt: 2 }} style={{textAlign:'center', fontSize:12, color:'grey'}}>
+                    <p id="modal-modal-description" style={{textAlign:'center', fontSize:12, color:'grey'}}>
                         {modalDes}
                     </p>
                     <Button variant="contained" color="error" style={{width:'100%'}} onClick={handleClose}>Close</Button>
